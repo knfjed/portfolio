@@ -1,0 +1,271 @@
+body {
+  height: 9000px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: url("../images/water-surface.jpg") no-repeat fixed left bottom;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.water-surface-opacity {
+  background-color: white;
+  height: 90%;
+  opacity: 85%;
+  z-index: 2;
+}
+
+header,
+section,
+footer {
+  z-index: 1;
+}
+
+/* header {
+  position: fixed;
+} */
+
+header nav {
+  height: 48px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+nav ul li {
+  margin: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 20%;
+  text-align: center;
+}
+
+/* nav ul li:hover {
+  box-shadow: 1px 1px 4px black;
+} */
+
+nav ul li a {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 100%;
+  height: 100%;
+}
+
+.top {
+  margin-top: 100px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.logo {
+  font-size: 70px;
+  letter-spacing: 16px;
+  margin-bottom: 0;
+  /* opacity: 90%; */
+}
+
+.name ul {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 10px;
+  left: auto;
+  right: auto;
+}
+
+.name li {
+  float: left;
+  margin-top: 10px;
+  margin-right: 45px;
+  border-bottom: 1px solid;
+}
+
+.top .title {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.top img {
+  background: white;
+  width: 80%;
+  height: auto;
+}
+
+.about {
+  position: relative;
+  margin: 200px 200px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 50px;
+  letter-spacing: 15px;
+}
+
+.about .specialty {
+  font-size: 15px;
+  margin-top: 80px;
+}
+
+.about .career {
+  font-size: 12px;
+  width: 58%;
+  line-height: 4;
+  margin-top: 80px;
+}
+
+.about .facebook {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 115px;
+  left: 250px;
+}
+
+.about .instagram {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 115px;
+  left: 290px;
+}
+
+.about .me {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  right: 30px;
+  top: 0;
+}
+
+.projects {
+  margin-left: 100px;
+}
+
+.project-x {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  clear: both;
+}
+
+.project-x img {
+  display: block;
+  opacity: 0.7;
+  width: 70%;
+  height: auto;
+  margin-left: 10%;
+  margin-bottom: 120px;
+}
+
+.project-x p {
+  display: block;
+  width: 40%;
+  font-size: 16px;
+  line-height: 2;
+  margin-left: 50px;
+}
+
+.project-y {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.project-y img {
+  display: inline-block;
+  opacity: 0.7;
+  width: 70%;
+  height: auto;
+  margin-left: 30%;
+  margin-bottom: 130px;
+}
+
+.project-y p {
+  display: inline-block;
+  position: absolute;
+  font-size: 16px;
+  line-height: 2;
+  top: 0px;
+}
+
+.project-z {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.project-z img {
+  display: inline-block;
+  opacity: 0.7;
+  width: 70%;
+  height: auto;
+  margin-left: 10%;
+  margin-bottom: 100px;
+  clear: both;
+}
+
+.project-z p {
+  position: absolute;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 2;
+  left: 10px;
+  margin: 0;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-left: 200px;
+}
+
+.skill .html5 {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  text-align: center;
+}
+
+.html5 img {
+  width: 80px;
+  height: auto;
+}
+
+.skill .css3 {
+  position: absolute;
+  top: 200px;
+  left: 210px;
+  text-align: center;
+}
+
+.css3 img {
+  width: 55px;
+  height: auto;
+}
+
+.skill .javascript {
+  position: absolute;
+  top: 210px;
+  left: 350px;
+  text-align: center;
+}
+
+.javascript img {
+  width: 55px;
+  height: auto;
+}
