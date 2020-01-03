@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- headerやsectionとbodyの間にはdiv等を入れない -->
     <div class="water-surface-opacity">
       <header>
         <nav>
@@ -21,6 +22,7 @@
          </ul>
         </nav>
       </header>
+      <!-- 全てsection同じクラスのスタイルを使う -->
       <section id="top" class="top">
         <h1 class="logo">KNFJED</h1>
         <div class="name">
@@ -36,46 +38,53 @@
         <p class="title">PORTFOLIO</p>
         <img src="./images/IMG_9579.JPG" />
       </section>
-      <section id="about"class="about">
-        <h3>ABOUT ME.</h3>
-        <p>Kana Fujieda</p>
-        <p
-        class="
-      specialty"
-      >
+      <section id="about"class="about section">
+        <!-- 全てsection-titleで同じクラスのスタイルを使う -->
+        <h3 class="section-titile">ABOUT ME.</h3>
+        <h4>Kana Fujieda</h4>
+        <p class="specialty">
         WEBデザイン/HTML/CSS/建築/精神医療/ソーシャルワーク/写真/旅
         </p>
         <p class="career">
-        建築学科を卒業後、建築設計事務所へ就職。半年間、事務所の床で寝る生活。<br>その後、精神医療に興味を持ち、精神科病院に入職。<br>フルで働きながら国家資格取得。現在、入職６年目。</br>
+        建築学科を卒業後、建築設計事務所へ就職。<br>その後、精神医療に興味を持ち、精神科病院に入職。<br>フルで働きながら国家資格取得。現在、入職６年目。</br>
         手を動かして自分でデザインしたくなり、2019年冬〜WEBデザインを学んでいます。<br>これからは働く場所や時間に制約されない生き方を模索していきます。</br>
         </p>
-        <img class="facebook" src="images/f_logo_RGB-Grey_58.png" />
-        <img class="instagram" src="images/glyph-logo_May2016.png" />
+        <a href="https://www.facebook.com/"><img class="facebook" src="images/logo/facebook.png" /></a>
+        <img class="instagram" src="images/logo/instagram.png" />
         <img class="me" src="images/me.JPG" />
       </section>
-      <section id="projects" class="projects">
-        <h3>PROJECTS.</h3>
-        <a class="project-x" href="#">
+      <section id="projects" class="projects section">
+        <h3 class="section-titile">PROJECTS.</h3>
+        <a class="project" href="#">
           <img src="./images/forest.jpg">
           <p>" X "<br>
-          xxxxxxxxxxxxxxxxxxxx</p>
+          xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
         </a>
-        <a class="project-y" href="#">
+        <a class="project" href="#">
           <img src="./images/forest.jpg">
-          <p>" Y "</p>
+          <p>" Y "<br>
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+          </p>
         </a>
-        <a class="project-z" href="#">
+        <a class="project" href="#">
           <img src="./images/forest.jpg">
-          <p>" Z "</p>
+          <p>" Z "<br>
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+          </p>
         </a>
       </section>
-      <section id="skill" class="skill">
-        <h3>SKILL.</h3>
-        <a class="html5" href="#"><img src="./images/logo/HTML5.png"><p>HTML5</p></a>
-        <a class="css3" href="#"><img src="./images/logo/CSS3.png"><p>CS3</p></a>
-        <a class="javascript" href="#"><img src="./images/logo/Javascript.png"><p>Javascript</p></a>
+      <section id="skill" class="skill section">
+        <h3 class="section-titile">SKILL.</h3>
+        <!-- アイコンのサイト https://icons8.jp/ -->
+        <div class="icon">
+          <a class="html5" href="#"><img src="./images/logo/html5.png"><p>HTML5</p></a>
+          <a class="css3" href="#"><img src="./images/logo/css3.png"><p>CS3</p></a>
+          <a class="javascript" href="#"><img src="./images/logo/source-code.png"><p>Javascript</p></a>
+          <a class="illustrator" href="#"><img src="./images/logo/illustrator.png"><p>illustrator</p></a>
+          <a class="photoshop" href="#"><img src="./images/logo/photoshop.png"><p>photoshop</p></a>
+      </div>
       </section>
-      <section id="contact" class="contact"></section>
+      <section id="contact" class="contact section"></section>
       <fotter></fotter>
     </div>
   </body>

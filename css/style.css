@@ -4,13 +4,38 @@ body {
   margin: 0;
   background: url("../images/water-surface.jpg") no-repeat fixed left bottom;
   background-size: cover;
+  font-size: 16px;
 }
 
 a {
   text-decoration: none;
   color: #4d4d4d;
 }
+/* ------------------
+all
+--------------------- */
 
+/* 全てsection-titleで同じクラスのスタイルを使う */
+.section {
+  margin: 0 10% 0 10%;
+}
+
+/* セクションのタイトルの共通のスタイリングを入れる */
+.section-titile {
+  margin: 100px 0 0 0;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 50px;
+  letter-spacing: 15px;
+}
+
+/* ------------------
+base
+--------------------- */
 .water-surface-opacity {
   background-color: white;
   height: 90%;
@@ -24,20 +49,25 @@ footer {
   z-index: 1;
 }
 
-/* header {
-  position: fixed;
-} */
+/* ------------------
+header
+--------------------- */
 
 header nav {
+  /* position: fixed; */
   height: 48px;
+  font-weight: bold;
+  /* background-color: white; */
 }
 
 header ul {
+  /* position: fixed; */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   list-style-type: none;
+  align-items: center;
   margin: 0;
   padding-left: 0;
   width: 100%;
@@ -52,9 +82,9 @@ nav ul li {
   text-align: center;
 }
 
-/* nav ul li:hover {
-  box-shadow: 1px 1px 4px black;
-} */
+nav li a:hover {
+  transition: rgb(240, 116, 188) 0.1s;
+}
 
 nav ul li a {
   display: inline-block;
@@ -62,6 +92,10 @@ nav ul li a {
   width: 100%;
   height: 100%;
 }
+
+/* ------------------
+top
+--------------------- */
 
 .top {
   margin-top: 100px;
@@ -101,156 +135,107 @@ nav ul li a {
   width: 80%;
   height: auto;
 }
+/* ------------------
+about
+--------------------- */
 
-.about {
+#about {
   position: relative;
-  margin: 200px 200px;
-  font-size: 30px;
-  letter-spacing: 3px;
-  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-h3 {
-  font-size: 50px;
-  letter-spacing: 15px;
-}
-
-.about .specialty {
-  font-size: 15px;
+.about h4 {
+  font-size: 28px;
   margin-top: 80px;
 }
 
-.about .career {
-  font-size: 12px;
+.specialty {
+  display: block;
+  font-size: 17px;
+}
+
+.career {
+  display: block;
   width: 58%;
-  line-height: 4;
+  line-height: 3;
   margin-top: 80px;
 }
 
-.about .facebook {
+.facebook {
   position: absolute;
   width: 25px;
   height: 25px;
-  top: 115px;
+  top: 230px;
   left: 250px;
 }
 
-.about .instagram {
+.instagram {
   position: absolute;
   width: 25px;
   height: 25px;
-  top: 115px;
+  top: 230px;
   left: 290px;
 }
 
-.about .me {
+.me {
   position: absolute;
-  width: 200px;
+  width: 100px;
   height: auto;
-  right: 30px;
-  top: 0;
+  right: 20%;
+  top: 30%;
 }
+/* ------------------
+projects
+--------------------- */
 
 .projects {
-  margin-left: 100px;
-}
-
-.project-x {
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
-  clear: both;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
-.project-x img {
-  display: block;
+.project img {
+  display: inline-block;
+  margin-top: 50px;
   opacity: 0.7;
   width: 70%;
   height: auto;
-  margin-left: 10%;
-  margin-bottom: 120px;
 }
 
-.project-x p {
-  display: block;
-  width: 40%;
+.project p {
+  display: inline-block;
+  width: 20%;
   font-size: 16px;
   line-height: 2;
   margin-left: 50px;
+  word-wrap: break-word;
 }
 
-.project-y {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
+/* ------------------
+skill
+--------------------- */
 
-.project-y img {
-  display: inline-block;
-  opacity: 0.7;
-  width: 70%;
-  height: auto;
-  margin-left: 30%;
-  margin-bottom: 130px;
-}
-
-.project-y p {
-  display: inline-block;
-  position: absolute;
-  font-size: 16px;
-  line-height: 2;
-  top: 0px;
-}
-
-.project-z {
+.icon {
   display: flex;
   flex-direction: row;
-  position: relative;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
-.project-z img {
-  display: inline-block;
-  opacity: 0.7;
-  width: 70%;
-  height: auto;
-  margin-left: 10%;
-  margin-bottom: 100px;
-  clear: both;
-}
-
-.project-z p {
-  position: absolute;
-  display: inline-block;
-  font-size: 16px;
-  line-height: 2;
-  left: 10px;
-  margin: 0;
-}
-
-.skill {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  margin-left: 200px;
-}
-
-.skill .html5 {
-  position: absolute;
-  top: 200px;
-  left: 50px;
+.skill p {
   text-align: center;
 }
 
 .html5 img {
-  width: 80px;
+  width: 40px;
   height: auto;
-}
-
-.skill .css3 {
-  position: absolute;
-  top: 200px;
-  left: 210px;
-  text-align: center;
 }
 
 .css3 img {
@@ -258,14 +243,20 @@ h3 {
   height: auto;
 }
 
-.skill .javascript {
-  position: absolute;
-  top: 210px;
-  left: 350px;
-  text-align: center;
-}
-
 .javascript img {
   width: 55px;
   height: auto;
 }
+
+.illustrator {
+  width: 55px;
+  height: auto;
+}
+
+.photoshop {
+  width: 55px;
+  height: auto;
+}
+/* ------------------
+contact
+--------------------- */
