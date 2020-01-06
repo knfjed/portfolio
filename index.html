@@ -36,7 +36,8 @@
           </ul>
         </div>
         <p class="title">PORTFOLIO</p>
-        <img src="./images/IMG_9579.JPG" />
+        <a href="https://www.google.co.jp/maps/place/34%C2%B019'21.5%22N+132%C2%B022'56.7%22E/@34.3226525,132.3816965,18z/data=!3m1!4b1!4m14!1m7!3m6!1s0x355a9908eef34fbb:0x7e4ce50cfc1f772!2z5bqD5bO255yM5bqD5bO25biC!3b1!8m2!3d34.3852894!4d132.4553055!3m5!1s0x0:0x0!7e2!8m2!3d34.3226509!4d132.3824158?hl=ja">
+        <img src="./images/IMG_9579.JPG" /></a>
       </section>
       <section id="about"class="about section">
         <!-- 全てsection-titleで同じクラスのスタイルを使う -->
@@ -50,42 +51,66 @@
         手を動かして自分でデザインしたくなり、2019年冬〜WEBデザインを学んでいます。<br>これからは働く場所や時間に制約されない生き方を模索していきます。</br>
         </p>
         <a href="https://www.facebook.com/"><img class="facebook" src="images/logo/facebook.png" /></a>
-        <img class="instagram" src="images/logo/instagram.png" />
+        <a href="https://www.instagram.com/accounts/login/?hl=ja"><img class="instagram" src="images/logo/instagram.png" /></a>
         <img class="me" src="images/me.JPG" />
       </section>
       <section id="projects" class="projects section">
         <h3 class="section-titile">PROJECTS.</h3>
         <a class="project" href="#">
           <img src="./images/forest.jpg">
-          <p>" X "<br>
-          xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <p>Project-01<br>
+            木曾路はすべて山の中である。<br>
+            あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。</p>
         </a>
         <a class="project" href="#">
           <img src="./images/forest.jpg">
-          <p>" Y "<br>
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-          </p>
+          <p>Project-02<br>
+            木曾路はすべて山の中である。<br>
+            あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。</p>
         </a>
         <a class="project" href="#">
           <img src="./images/forest.jpg">
-          <p>" Z "<br>
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-          </p>
+          <p>Project-03<br>
+            木曾路はすべて山の中である。<br>
+            あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。</p>
         </a>
       </section>
       <section id="skill" class="skill section">
         <h3 class="section-titile">SKILL.</h3>
         <!-- アイコンのサイト https://icons8.jp/ -->
-        <div class="icon">
-          <a class="html5" href="#"><img src="./images/logo/html5.png"><p>HTML5</p></a>
-          <a class="css3" href="#"><img src="./images/logo/css3.png"><p>CS3</p></a>
-          <a class="javascript" href="#"><img src="./images/logo/source-code.png"><p>Javascript</p></a>
-          <a class="illustrator" href="#"><img src="./images/logo/illustrator.png"><p>illustrator</p></a>
-          <a class="photoshop" href="#"><img src="./images/logo/photoshop.png"><p>photoshop</p></a>
-      </div>
+        <div class="skill-table">
+          <a class="skillbox html5" href="#"><img src="./images/logo/html5.png"><p>HTML5</p>
+          <p>シングルページやスタンダードなレイアウトデザインを使ったマークアップができます</p></a>
+          <a class="skillbox css3" href="#"><img src="./images/logo/css3.png"><p>CS3</p>
+            <p>flexboxなどを使ったホームページデザインができます</p></a>
+          <a class="skillbox javascript" href="#"><img src="./images/logo/source-code.png"><p>Javascript</p>
+            <p>動的なWEBページの制作ができます</p></a>
+          <a class="skillbox illustrator" href="#"><img src="./images/logo/illustrator.png"><p>illustrator</p>
+            <p>イラストやアイコンの制作ができます</p></a>
+          <a class="skillbox photoshop" href="#"><img src="./images/logo/photoshop.png"><p>photoshop</p>
+            <p>写真の加工や編集ができます</p></a>
+          </div>
       </section>
-      <section id="contact" class="contact section"></section>
-      <fotter></fotter>
+      <form id="contact" class="contact section" action="confirm.php" method="post">
+        <h3 class="section-titile">CONTACT</h3>
+        <input type="text" name="name" placeholder="name">
+        <input type="email" name="email" placeholder="email">
+        <input type="number" name="tel" placeholder="tel">
+        <div class="time">
+        <p>連絡可能な時間帯</p>
+      </label><input id="time" type="radio" name="time" value="time">
+      <label for="time">9:00-12:00</label>
+      <input id="time" type="radio" name="time" value="time">
+      <label for="time">13:00-15:00</label>
+      <input id="time" type="radio" name="time" value="time">
+      <label for="time">15:00-17:00</label>
+      <input id="time" type="radio" name="time" value="time">
+      <label for="time">17:00-20:00</label>
+      </div>
+        <textarea name="message" placeholder="message"></textarea>
+        <input type="submit" value="SEND">
+      </form>
+      <footer>Copyright ©︎ 2020 Kana Fujieda All Right Reserved.</footer>
     </div>
   </body>
 </html>

@@ -1,5 +1,5 @@
 body {
-  height: 9000px;
+  height: 4900px;
   font-family: "Roboto", sans-serif;
   margin: 0;
   background: url("../images/water-surface.jpg") no-repeat fixed left bottom;
@@ -7,13 +7,19 @@ body {
   font-size: 16px;
 }
 
+/* ------------------
+all
+--------------------- */
 a {
   text-decoration: none;
   color: #4d4d4d;
 }
-/* ------------------
-all
---------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 /* 全てsection-titleで同じクラスのスタイルを使う */
 .section {
@@ -57,7 +63,7 @@ header nav {
   /* position: fixed; */
   height: 48px;
   font-weight: bold;
-  /* background-color: white; */
+  background-color: white;
 }
 
 header ul {
@@ -196,7 +202,8 @@ projects
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: flex-start;
+  justify-content: flex-start;
+  /* align-items: flex-start; */
 }
 
 .project img {
@@ -210,36 +217,37 @@ projects
 .project p {
   display: inline-block;
   width: 20%;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 2;
   margin-left: 50px;
-  word-wrap: break-word;
 }
 
 /* ------------------
 skill
 --------------------- */
 
-.icon {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  justify-content: space-between;
+.skill-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 0 auto 0;
   margin-top: 50px;
 }
 
-.skill p {
+.skillbox {
+  display: table-cell;
+  word-wrap: break-word;
+  padding: 30px;
   text-align: center;
 }
 
 .html5 img {
-  width: 40px;
+  width: 50px;
   height: auto;
 }
 
 .css3 img {
-  width: 55px;
+  width: 58px;
   height: auto;
 }
 
@@ -248,15 +256,68 @@ skill
   height: auto;
 }
 
-.illustrator {
+.illustrator img {
   width: 55px;
   height: auto;
 }
 
-.photoshop {
+.photoshop img {
   width: 55px;
   height: auto;
 }
 /* ------------------
 contact
 --------------------- */
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 30px auto 50px;
+  opacity: 0.9;
+}
+
+.contact [type="text"],
+[type="email"],
+[type="number"] {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255);
+  color: darkgray;
+}
+
+.contact textarea {
+  display: block;
+  width: 100%;
+  margin: 30px 0;
+  padding: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255);
+  color: darkgray;
+}
+
+.time {
+  background-color: white;
+  color: #4d4d4d;
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+/* ------------------
+footer
+--------------------- */
+footer {
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  opacity: 0.7;
+  text-align: center;
+  padding-top: 15px;
+}
